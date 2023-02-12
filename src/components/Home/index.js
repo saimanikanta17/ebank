@@ -10,7 +10,7 @@ const Home = props => {
   const token = Cookies.get('jwt_token')
 
   if (token === undefined) {
-    return <Redirect to="/login" />
+    return <Redirect to="/ebank/login" />
   }
   return (
     <div>
